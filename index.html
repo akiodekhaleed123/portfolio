@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="script.css" />
+</head>
+<body>
+  <header>
+    <!-- this is the logo part -->
+    <div class="logo">Khaleed</div>
+    <!-- this is the nav bar section -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- this is the image after the nav bar -->
+<div class="image-container">
+  <img width="100px" height="100px" src="assets/ede88c83-335a-443d-a643-b9fd439a0627.jfif" alt="">
+</div>
+           <!-- this is the home section -->
+  <section id="home" class="section">
+    <div class="content">
+      <h1>Hello, I'm <span class="highlight"> Akiode Khaleed Korede</span></h1>
+      <p>A passionate Software Developer building web applications</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+  </section>
+              <!-- "this is the about me section" -->
+  <section id="about" class="section">
+  <h2>About Me</h2>
+  <p>Hi, I'm Khaleed from nigeria — a dedicated and curious software developer with a strong passion for building functional, responsive, and user-friendly web applications. I specialize in front-end development using HTML, CSS, JavaScript, and a little bit of React, and I’m constantly expanding my skills into full-stack development.</p>
+
+  <p>I studied at <strong>SQI College of ICT</strong>, where I gained solid foundational and advanced training in software development. My education there helped me develop a strong understanding of both the theoretical and practical aspects of building web applications.</p>
+
+  <p>I enjoy turning complex problems into simple, beautiful solutions. Whether it’s designing a clean user interface or optimizing performance, I aim to write clean and efficient code that creates meaningful digital experiences.</p>
+
+  <p>Beyond coding, I’m enthusiastic about learning new technologies, collaborating on exciting projects, and contributing to open-source. I'm also driven by a desire to grow in the tech space, not just as a developer but as a creative problem-solver and lifelong learner.</p>
+
+  <p>When I'm not coding, I love exploring tech trends, creating digital tools, and sharing knowledge with fellow developers. Let's build something awesome together!</p>
+  
+  <p>Its was a hard time for me though but i dedicated my time,my brain and everything it needed to understand it,and now i think i am well okay on it, i will be glad if you can allow me participater with you ,  i do not have any idea of coding before i joined <b>SQi</b> but within 4 months i was able to build a lot of frontend projects </p>
+  <p>i have done a lot of online interviews but not goten any job yet but i am assuring you that if we could collaborate together we will build the best web applications</p>
+</section>
+            <!-- this is the projects section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <!-- first project -->
+        <h3>Project One</h3>
+        <p>Score board</p>
+        <a href="https://akiodekhaleed123.github.io/port/" target="_blank" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>Countdown Timer App</p>
+      <a href="https://akiodekhaleed123.github.io/countdown/" target="_blank" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="reach-me">
+        <h3>Reach Me,Lets collaborate and make the best web applications</h3>
+        <p>@</p>
+        <ul>
+          <li><strong>Phone:</strong> <a href="tel:+2348080879246">08080879246</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/2348080879246" target="_blank">08080879246</a></li>
+          <li><strong>Facebook:</strong> <a href="https://facebook.com/akiode.khaleed.korede" target="_blank">Akiode Khaleed Korede</a></li>
+          <li><strong>Instagram:</strong> <a href="https://instagram.com/akiode.khaleed.korede" target="_blank">Akiode Khaleed Korede</a></li>
+          <li><strong>X (Twitter):</strong> <a href="https://x.com/akiode.khaleed.korede" target="_blank">Akiode Khaleed Korede</a></li>
+          <li><strong>TikTok:</strong> <a href="https://tiktok.com/@korede123" target="_blank">KOREDE123</a></li>
+        </ul>
+      </div>
+  </section>
+
+  <footer>
+    <p># 2025 Khaleed. All rights reserved.#</p>
+  </footer>
+
+  <script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.section').forEach(section => {
+    observer.observe(section);
+  });
+</script>
+</body>
+</html>
